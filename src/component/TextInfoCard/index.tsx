@@ -3,13 +3,16 @@ import styled from "styled-components";
 
 import Theme from "style/Theme";
 
+import { useEffect, useState } from "react";
 interface TextInfoCardProps {
   userData?: number;
   reviewData?: number;
   saveData?: number;
 }
+
 const TextInfoCard = (props: TextInfoCardProps) => {
   const { userData = 100, reviewData = 100, saveData = 100 } = props;
+
   return (
     <Container>
       <Text>

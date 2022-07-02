@@ -6,6 +6,7 @@ import styled, { keyframes } from "styled-components";
 import TripleLogo from "asset/img/triple2x.png";
 import Theme from "style/Theme";
 import TextInfoCard from "component/TextInfoCard";
+import { FadeIn } from "style/Animation";
 
 const MainPage = () => {
   return (
@@ -58,6 +59,7 @@ const LogoArea = styled.div`
   justify-content: center;
   grid-column: 1 / 2;
   grid-row: 1 / 3;
+  animation: ${FadeIn} 0.7s linear;
 `;
 const InfoArea = styled.div`
   display: flex;
@@ -65,6 +67,7 @@ const InfoArea = styled.div`
   align-items: center;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  animation: ${FadeIn} 0.7s 0.1s linear;
 `;
 const BadgeArea = styled.div`
   display: flex;
@@ -73,7 +76,7 @@ const BadgeArea = styled.div`
   align-items: flex-start
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-
+  animation: ${FadeIn} 0.7s 0.2s linear;
 `;
 const Logo = styled.img`
   width: 450px;
