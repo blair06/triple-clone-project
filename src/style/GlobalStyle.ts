@@ -7,6 +7,9 @@ const GlobalStyle = createGlobalStyle`
       font-size: 10px;
     }
     body {
+      width:100vw;
+      min-width: 1200px;
+
       height:100vh;
       background-color:${Theme.background};
         margin: 0;

@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-
 import Theme from "style/Theme";
-
-import { useEffect, useState } from "react";
+import useCountUp from "hook/useCountUp";
 interface TextInfoCardProps {
   userData?: number;
   reviewData?: number;
@@ -11,18 +9,21 @@ interface TextInfoCardProps {
 }
 
 const TextInfoCard = (props: TextInfoCardProps) => {
-  const { userData = 100, reviewData = 100, saveData = 100 } = props;
+  const { userData = 700, reviewData = 100, saveData = 470 } = props;
 
+  const userCount = useCountUp(userData, 2000);
+  const reviewCount = useCountUp(reviewData, 2000);
+  const saveCount = useCountUp(saveData, 2000);
   return (
     <Container>
       <Text>
-        <HilightText>{userData}만명</HilightText>의 사용자
+        <HilightText>{userCount}만명</HilightText>의 사용자
       </Text>
       <Text>
-        <HilightText>{userData}만개</HilightText>의 리뷰
+        <HilightText>{reviewCount}만개</HilightText>의 리뷰
       </Text>
       <Text>
-        <HilightText>{userData}만개</HilightText>의 저장
+        <HilightText>{saveCount}만개</HilightText>의 저장
       </Text>
     </Container>
   );

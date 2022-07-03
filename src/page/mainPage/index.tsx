@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import TextBadge from "component/TextBadge";
 import AppleImg from "asset/img/badge-apple4x.png";
 import AwardImg from "asset/img/play-store2x.png";
@@ -38,6 +38,7 @@ const MainPage = () => {
 const Container = styled.div`
   display: flex;
   width: 100%;
+  min-width: 1200px;
   height: 100vh;
   align-items: center;
 `;
@@ -47,21 +48,21 @@ const Wrapper = styled.div`
   column-gap: 200px;
   height: 550px;
   width: 100%;
-  padding: 50px 200px;
+  padding: 50px 10vw;
   min-width: 1200px;
-  grid-template-rows: 1.5fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
 `;
 const LogoArea = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   grid-column: 1 / 2;
   grid-row: 1 / 3;
   animation: ${FadeIn} 0.7s linear;
 `;
 const InfoArea = styled.div`
+  min-width: 480px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,9 +71,11 @@ const InfoArea = styled.div`
   animation: ${FadeIn} 0.7s 0.1s linear;
 `;
 const BadgeArea = styled.div`
+  min-width:480px;
+
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  
   align-items: flex-start
   grid-column: 2 / 3;
   grid-row: 2 / 3;

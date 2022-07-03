@@ -16,14 +16,15 @@ const TextBadge = (props: TextBadgeProps) => {
   );
 };
 const Container = styled.div`
-  width: 100%;
   height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-right: 5%;
 `;
 const BadgeImg = styled.img`
   height: 100%;
+  margin-right: 10px;
 `;
 const Text = styled.p`
   color: ${Theme.gray200};
