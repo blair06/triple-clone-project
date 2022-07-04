@@ -1,23 +1,23 @@
 import { useEffect, useState } from "react";
+import easeOutQuint from "util/EaseOutQuint";
 
-const easeOutQuint = (x: number) => {
-  return 1 - Math.pow(1 - x, 5);
-};
-
-const useCountUp = (goal: number, duration: number) => {
+const useCountUp = (endNum: number, duration = 2000) => {
   const [count, setCount] = useState(0);
-  const speed = duration / goal;
+  const frameRate = 1000 / 60;
+  const totalFrame = Math.round(duration / frameRate);
 
   useEffect(() => {
     let currentNum = 0;
 
     const counter = setInterval(() => {
       currentNum += 1;
-      setCount(currentNum);
-      if (currentNum === goal) {
+      const process = easeOutQuint(currentNum / totalFrame);
+      setCount(Math.round(endNum * process));
+
+      if (currentNum === totalFrame) {
         clearInterval(counter);
       }
-    }, speed);
+    }, frameRate);
   }, []);
 
   return count;
