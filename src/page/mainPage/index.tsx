@@ -20,7 +20,6 @@ const Wrapper = styled.div`
   height: 550px;
   width: 100%;
   padding: 50px 10vw;
-  min-width: 1200px;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
 `
