@@ -44,8 +44,10 @@ git 협업에 필요한 template이 적용되어있습니다
 
 ## 2. 프로젝트 실행 방법🚗
 
+- `yarn install`: 패키지 설치를 진행합니다
 - `yarn start` : 개발 서버를 실행합니다
 - `yarn build` : 현재 상태 내용을 빌드합니다
+  ❗️`react-scripts 관련 에러가 발생할 경우 yarn upgrade 혹은 react-scripts를 재설치해주세요!`
 
 ## 3. 사용 기술🛠
 
