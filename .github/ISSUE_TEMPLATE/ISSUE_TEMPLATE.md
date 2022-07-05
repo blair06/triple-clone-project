@@ -1,9 +1,9 @@
 ---
 name: Feature 이슈 템플릿
-about: "Issue Template #1"
-title: "[EPIC1] Title"
+about: 'Issue Template #1'
+title: '[EPIC1] Title'
 labels: enhancement
-assignees: ""
+assignees: ''
 ---
 
 ## 어떤 이슈 인가요? 🔍
