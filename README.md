@@ -1,7 +1,7 @@
 ## Project Preview
 
 ![화면 기록 2022-07-05 오후 10 01 41](https://user-images.githubusercontent.com/38137135/177336494-fbb43363-9c7a-4d41-b33f-fd777c9a105d.gif)
-git server에 업로드 되었기 때문에 약간의 버퍼링이 존재합니다!
+상기 gif는 git server에 업로드 되었기 때문에 약간의 버퍼링이 존재합니다!
 
 ## 목차
 
