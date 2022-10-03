@@ -13,7 +13,7 @@ const useCountUp = (endNum: number, duration = 2000) => {
     const counter = setInterval(() => {
       currentNum += 1
       const process = easeOutQuint(currentNum / totalFrame)
-      setCount(Math.round(endNum * process))
+      setCount(Math.floor(endNum * process))
 
       if (currentNum === totalFrame) {
         clearInterval(counter)

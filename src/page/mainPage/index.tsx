@@ -41,10 +41,10 @@ const InfoArea = styled.div`
   animation: ${FadeIn} 0.7s 0.1s linear;
 `
 const BadgeArea = styled.div`
-  min-width:480px;
+  min-width: 480px;
   display: flex;
   flex-direction: row;
-  align-items: flex-start
+  align-items: flex-start;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   animation: ${FadeIn} 0.7s 0.2s linear;
